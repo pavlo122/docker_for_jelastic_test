@@ -1,6 +1,6 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-jdk
 
-RUN apk update && apk add ca-certificates wget 
+RUN apt-get update
 
 RUN wget http://apache.mirrors.nublue.co.uk//jmeter/binaries/apache-jmeter-3.2.tgz
 RUN tar -xvf apache-jmeter-3.2.tgz
