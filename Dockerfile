@@ -2,7 +2,7 @@ FROM openjdk:8-jdk-alpine
 
 RUN apk --no-cache add wget
 
-RUN wget --quiet http://apache.mirrors.nublue.co.uk//jmeter/binaries/apache-jmeter-3.2.tgz
+COPY apache-jmeter-3.2.tgz .
 RUN tar -xvf apache-jmeter-3.2.tgz
 WORKDIR apache-jmeter-3.2
 
