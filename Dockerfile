@@ -1,2 +1,2 @@
 FROM alpine
-ENV result=whatever
+ENV resul=whatever
